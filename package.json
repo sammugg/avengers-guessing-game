@@ -1,0 +1,18 @@
+{
+  "name": "dynamic-guessing-game",
+  "version": "0.1.0",
+  "description": "A simple guessing game",
+  "scripts": {
+    "bsync": "browser-sync --server --files \"**/*.html,**/*.css,**/*.js\"",
+    "test": "mocha --require babel-register test/unit"
+  },
+  "author": "Tech Talent South, Sam Muggleworth",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1"
+  },
+  "dependencies": {}
+}
