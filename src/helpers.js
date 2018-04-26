@@ -24,18 +24,26 @@ const getRandomCharacter = (characters) => {
  * @returns {String} the human readable string used to notify the user of the status of their guess
  */
 const checkGuessAgainstComputer = (userInput, computerAnswer) => {
-  if (!userInput || !computerAnswer || computerAnswer.length === 0) {
-    return;
-  }
+  // if (!userInput || !computerAnswer) {
+  //   return;
+  // }
 
-  if (userInput === computerAnswer) {
-    return `Hooray! ${computerAnswer} survived the Infinity War!`;
-  } else {
-    return `Oh no! ${userInput} didn't make it! Hope they weren't your favorite...`;
+  // if (userInput === computerAnswer) {
+  //   return `Hooray! ${computerAnswer} survived the Infinity War!`;
+  // } else {
+  //   return `Oh no! ${userInput} didn't make it! Hope they weren't your favorite...`;
+  // }
+
+  if (userInput && computerAnswer) {
+    if (userInput === computerAnswer) {
+      return `Hooray! ${computerAnswer} survived the Infinity War!`;
+    } else {
+      return `Oh no! ${userInput} didn't make it! Hope they weren't your favorite...`;
+    }
   }
 };
 
 export default {
-  getRandomCharacter,
+  getRandomCharacter ,
   checkGuessAgainstComputer
 };

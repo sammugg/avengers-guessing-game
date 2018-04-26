@@ -9,6 +9,7 @@ describe('TDD Guessing Game | checkGuessAgainstComputer()', () => {
   let testGoodGuess = 'Foo';
   let testBadGuess = 'Bar';
 
+  // Tests checking on inputs
   it('should return undefined if computer answer is undefined', () => {
     expect(helpers.checkGuessAgainstComputer(testGoodGuess, undefined)).to.equal(undefined);
   });
@@ -21,15 +22,20 @@ describe('TDD Guessing Game | checkGuessAgainstComputer()', () => {
     expect(helpers.checkGuessAgainstComputer(undefined, testGoodGuess)).to.equal(undefined);
   });
 
+  // Tests checking on core of contract
   it('should return a string', () => {
     expect(typeof helpers.checkGuessAgainstComputer(testGoodGuess, testGoodGuess)).to.equal('string');
   });
 
   it('should return the positive response if user guesses correctly', () => {
-    expect(helpers.checkGuessAgainstComputer(testGoodGuess, testGoodGuess)).to.equal(`Hooray! ${testGoodGuess} survived the Infinity War!`);
+    expect(helpers.checkGuessAgainstComputer(testGoodGuess, testGoodGuess)).to.equal(
+      `Hooray! ${testGoodGuess} survived the Infinity War!`
+    );
   });
 
   it('should return the negatory response if user guesses incorrectly', () => {
-    expect(helpers.checkGuessAgainstComputer(testBadGuess, testGoodGuess)).to.equal(`Oh no! ${testBadGuess} didn't make it! Hope they weren't your favorite...`);
+    expect(helpers.checkGuessAgainstComputer(testBadGuess, testGoodGuess)).to.equal(
+      `Oh no! ${testBadGuess} didn't make it! Hope they weren't your favorite...`
+    );
   });
 });
