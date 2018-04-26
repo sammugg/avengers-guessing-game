@@ -1,7 +1,7 @@
 /**
  * Returns a random character from the array passed in using Math.random()
  *
- * @param character - an array of strings
+ * @param characters - an array of strings
  * @returns {String} random entry from input array
  */
 const getRandomCharacter = (characters) => {
