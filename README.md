@@ -2,6 +2,19 @@
 
 A simple guessing game that has a user select a character and the computer randomly decide if they survive the new movie Avengers: Infinity War.
 
+## File Structure
+
+```
+├── index.html
+├── assets/        # directory holding image assets
+├── node_modules/  # directory holding installed assets
+├─┬ src/           # directory for source code
+│ ├── main.js      # primary JS module
+│ └── helpers.js   # JS module containing helper functions
+└─┬ test/
+  └── unit/        # directory holding unit tests
+```
+
 ## To Run Locally:
 
 1. Clone this repository and navigate into project directory

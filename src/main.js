@@ -29,7 +29,7 @@ const handleGuess = (event) => {
 // SetUp game (doing it programatically to make sure it's right!)
 for (let i in characters) {
   let newHero = document.createElement('img');
-  newHero.src = `./src/assets/${characters[i]}.jpeg`;
+  newHero.src = `./assets/${characters[i]}.jpeg`;
   newHero.id = characters[i];
   newHero.addEventListener('click', handleGuess);
   heroesArea.appendChild(newHero);
