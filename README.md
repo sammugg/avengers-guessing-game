@@ -3,6 +3,8 @@
 A simple guessing game that has a user select a character and the computer randomly decide if they survive the new movie Avengers: Infinity War.
 >Images are not my own and all creative credit goes to their creators.
 
+This little project was used as part of an Intro to JavaScript session. The session covered functions, Unit Testing, and Test Driven Development. [Click here to see the slide deck.](https://slides.com/sammugg/js-functions-and-tdd)
+
 ## File Structure
 
 ```
