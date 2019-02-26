@@ -1,6 +1,7 @@
 # Avengers Guessing Game
 
 A simple guessing game that has a user select a character and the computer randomly decide if they survive the new movie Avengers: Infinity War.
+>Images are not my own and all creative credit goes to their creators.
 
 ## File Structure
 
@@ -26,5 +27,3 @@ A simple guessing game that has a user select a character and the computer rando
 
 1. Install dependencies with `npm install`
 2. From the root of the project, run `npm test`
-
->Images are not my own and all creative credit goes to their creators.
